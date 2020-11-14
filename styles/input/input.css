@@ -1,0 +1,18 @@
+* {
+    --inpMargin: 10px;
+    --inpPadding: 5px;
+    --inpFontSize: 1rem;
+    --inpFontColor: #888;
+    --inpFontWeight: 400;
+    --inpFontBorder: 1px solid rgb(20, 6, 6);
+    --inpFontWeight: 10px;
+    --inpFontWeight: 10px;
+    --inpFontWeight: 10px;
+}
+.inp {
+    margin: var(--inpMargin);
+    padding: var(--inpPadding);
+    font-size: var(--inpFontSize);
+    color: var(--inpFontColor);
+    font-weight: var(--inpFontWeight);
+}

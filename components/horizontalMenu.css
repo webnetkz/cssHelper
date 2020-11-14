@@ -1,0 +1,32 @@
+* {
+    --horizontalMenuBg: #f1f1f1;
+    --horizontalMenuWidth: 100%;
+    --horizontalMenuLinkColor: #000;
+    --horizontalMenuLinkActiveBg: #4CAF50;
+    --horizontalMenuLinkActiveColor: white;
+    --horizontalMenuHoverBg: #555;
+    --horizontalMenuHoverColor: white;
+}
+.HorizontalMenu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: var(--horizontalMenuWidth);
+    background-color: var(--verticalMenuBg);
+}
+.HorizontalMenu li a {
+    display: block;
+    color: var(--verticalMenuLinkColor);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.HorizontalMenu li a.active {
+    background-color: var(--vertivalMenuLinkActiveBg);
+    color: var(--vertivalMenuLinkActiveColor);
+}
+.HorizontalMenu li a:hover:not(.active) {
+    background-color: var(--vertivalMenuLinkActiveBg);
+    color: var(--vertivalMenuLinkActiveColor);
+}
