@@ -1,11 +1,10 @@
-<?php require_once 'header.php'; ?>
-<div>
-    <ul class="HorizontalMenu">
-        <li><a href="/index" class="activeItem">Home</a></li>
-        <li><a href="/pages/componentsCss">Components only CSS</a></li>
-        <li><a href="/pages/elementsCss">Elements CSS</a></li>
-    </ul>
-</div>
+<?php 
+
+$title = 'Index';
+require_once 'header.php';
+
+?>
+
     <!-- <div class="dropdown">
         <button>Button</button>
         <div>
@@ -30,17 +29,6 @@
         <input type="text" class="inp">
     </div> -->
 
+<?php require_once 'footer.php';
 
 
-
-        <script>
-            /* // Проверка браузера на поддержку service worker
-            if('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                    .register('sw.js')
-                    .then(function() { console.log("Service Worker Registered"); });
-            }*/
-        </script>
-            <script src="/public/js/frontHelper.js"></script>
-    </body>
-</html>

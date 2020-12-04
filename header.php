@@ -26,3 +26,11 @@ require_once 'app/lib/Debug/DebugMod.php';
     </head>
 
     <body>
+
+    <div>
+        <ul class="HorizontalMenu" id="menu">
+            <li><a href="http://localhost/index.php" class="activeItem">Home</a></li>
+            <li><a href="http://localhost/pages/componentsCss.php">Components only CSS</a></li>
+            <li><a href="http://localhost/pages/elementsCss.php">Elements CSS</a></li>
+        </ul>
+    </div>

@@ -12,8 +12,7 @@
 ###                                                                                              ©2020          ###
 #################################################################################################################*/
 
-
-function preventSelection(element){
+    function preventSelection(element){
     let preventSelection = false;
 
         function addHandler(element, event, handler) {
@@ -103,5 +102,4 @@ function preventSelection(element){
     }
     
 document.oncontextmenu = new Function("return false")
-// Вызываем функцию запрета правого клика
-preventSelection(document);
+preventSelection(document)

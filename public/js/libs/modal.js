@@ -1,4 +1,3 @@
-// Модуль модального окна v 0.01 12.09.2020
 export function btnForModal(element, messages) {
 	// Слушаем событие клика
 	element.addEventListener('click', showModal);

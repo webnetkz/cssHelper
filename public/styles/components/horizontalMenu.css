@@ -38,4 +38,10 @@
     .HorizontalMenu {
         flex-direction: column;
     }
+    .HorizontalMenu li a {
+        border-bottom: 2px solid var(--horizontalMenuLinkColor);
+    }
+    .HorizontalMenu li a.activeItem {
+        border-bottom: 2px solid var(--horizontalMenuLinkActiveBg);
+    }
 }
