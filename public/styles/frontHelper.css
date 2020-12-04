@@ -1,3 +1,4 @@
+
 /*#################################################################################################################
 ###                                                                                                             ###
 ###  |#####       ##       ############/      |###|            |##\           |###|        /##################/ ###
@@ -12,20 +13,11 @@
 ###                                                                                              ©2020          ###
 #################################################################################################################*/
 
-
-@import url("./components/dropdown.css");
-@import url("./components/horizontalMenu.css");
-@import url("./components/verticalMenu.css");
-
-@import url("./styles/display.css");
-@import url("./styles/flex.css");
-@import url("./styles/float.css");
-@import url("./styles/link.css");
-@import url("./styles/opacity.css");
-@import url("./styles/overflow.css");
-@import url("./styles/position.css");
-@import url("./styles/text.css");
-@import url("./styles/input/input.css");
+/* Components START */
+@import url("components/dropdown.css");
+@import url("components/horizontalMenu.css");
+@import url("components/verticalMenu.css");
+/* Components END */
 
 * {
     --transitionDuration: 500ms;
@@ -34,16 +26,7 @@
     box-sizing: border-box;
     transition-duration: var(--transitionDuration);
     outline: none;
-
-    --color0: #ffffff;
-
-    --color1: #4CAF50;
-    --color1-1: #3e8e41;
-
-    --color2: #f1f1f1;
-
-    --color-text: #000000;
-
+    transition-duration: 600ms;
 }
 html, body {
     scroll-behavior: smooth;

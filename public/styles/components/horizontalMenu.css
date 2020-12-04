@@ -1,11 +1,11 @@
 * {
-    --horizontalMenuBg: #f1f1f1;
+    --horizontalMenuBg: linear-gradient(189deg,#1697bf 3%,#68cef5 98%);
     --horizontalMenuWidth: 100%;
-    --horizontalMenuLinkColor: #000;
-    --horizontalMenuLinkActiveBg: #4CAF50;
-    --horizontalMenuLinkActiveColor: white;
+    --horizontalMenuLinkColor: rgb(255, 255, 255);
+    --horizontalMenuLinkActiveBg: #10576d;
+    --horizontalMenuLinkActiveColor: rgb(250, 250, 250);
     --horizontalMenuHoverBg: #555;
-    --horizontalMenuHoverColor: white;
+    --horizontalMenuHightBtn: 50px;
 }
 .HorizontalMenu {
     display: flex;
@@ -14,19 +14,28 @@
     margin: 0;
     padding: 0;
     width: var(--horizontalMenuWidth);
-    background-color: var(--verticalMenuBg);
+    background: var(--horizontalMenuBg);
 }
 .HorizontalMenu li a {
     display: block;
-    color: var(--verticalMenuLinkColor);
-    padding: 8px 16px;
+    color: var(--horizontalMenuLinkColor);
+    padding: 0 16px;
     text-decoration: none;
+    height: var(--horizontalMenuHightBtn);
+    line-height: var(--horizontalMenuHightBtn);
 }
-.HorizontalMenu li a.active {
-    background-color: var(--vertivalMenuLinkActiveBg);
-    color: var(--vertivalMenuLinkActiveColor);
+.HorizontalMenu li a.activeItem {
+    background: var(--horizontalMenuLinkActiveBg);
+    color: var(--horizontalMenuLinkActiveColor);
 }
-.HorizontalMenu li a:hover:not(.active) {
-    background-color: var(--vertivalMenuLinkActiveBg);
-    color: var(--vertivalMenuLinkActiveColor);
+.HorizontalMenu li a:hover:not(.activeItem) {
+    background: var(--horizontalMenuLinkActiveBg);
+    color: var(--horizontalMenuLinkActiveColor);
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1080px) {
+    .HorizontalMenu {
+        flex-direction: column;
+    }
 }
