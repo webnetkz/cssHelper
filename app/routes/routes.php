@@ -11,6 +11,7 @@ foreach($routes as $k => $v){
     if($url == $v) {
         echo $v.'<br>';
         //var_dump($routes);
+        
     } else {
         //header('Location: https://google.com');
     }
