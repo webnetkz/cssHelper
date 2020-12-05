@@ -3,6 +3,7 @@
 session_start();
 
 require_once 'app/lib/Debug/DebugMod.php';
+require_once 'app/routes/routes.php';
 
 ?>
 <!DOCTYPE html>
